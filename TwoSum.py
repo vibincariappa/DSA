@@ -11,6 +11,7 @@
 
 
 #Bruteforce application
+
 #         n = len(nums)
 
 #         for i in range(n):
@@ -23,16 +24,15 @@
 #TwoSum - Using HashMap
 class Solution:
     def TwoSum(self,nums, target):
-        seen = {}
-        for i, num in enumerate(nums):
-            complement = target -num
-            if complement in seen:
-                return[seen[complement],i]
-            seen[num] = i
-        return
+        # seen = {}
+        # for i, num in enumerate(nums):
+        #     complement = target -num
+        #     if complement in seen:
+        #         return[seen[complement],i]
+        #     seen[num] = i
+        # return
     
 nums = list(map(int,input("Enter you Nums: ").split()))
 target = int(input("Target:"))
 sol = Solution()
 print(sol.TwoSum(nums,target))
-            

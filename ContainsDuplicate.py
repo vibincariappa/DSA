@@ -12,6 +12,16 @@
 
 #ContainsDuplicate - Using HashSEt
 
+
+#Algorithm to check if an array contains duplicate elements
+
+# create set()
+# iterate number through our array
+#     if number already exists in the set retrun True
+# if does not exist add the number to th set
+# if the number already exist in the set return false
+
+
 class Solution:
     def ContainsDuplicate(self,nums):
         seen = set() #creates a set to store unique elements
@@ -28,4 +38,5 @@ class Solution:
 nums = list(map(int, input("Enter Numbers: ").split()))
 sol = Solution()
 print(sol.ContainsDuplicate(nums))
+
 
