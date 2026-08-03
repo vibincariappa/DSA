@@ -14,14 +14,19 @@ class Solution:
 
 
 #Hashmap
-        count = {}
+        # count = {}
 
-        for num in nums:
-            count[num] = count.get(num,0)+1
+        # for num in nums:
+        #     count[num] = count.get(num,0)+1
 
-        for num,freq in count.items():
-            if freq > len(nums) // 2:
-                return num
+        # for num,freq in count.items():
+        #     if freq > len(nums) // 2:
+        #         return num
 
+#using sort function
+
+        nums.sort()
+        return nums[len(nums)//2]
+        
 sol = Solution()
 print(sol.MajorityElements([3,2,3]))
